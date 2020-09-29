@@ -1,5 +1,4 @@
 require('dotenv').config()
-const mongoose = require('mongoose')
 const express = require('express')
 const morgan = require('morgan')
 const app = express()
@@ -29,7 +28,9 @@ app.get('/api/persons', (req, res) => {
   Person.find({}).then(persons => {
     res.json(persons.map(person => person))
   })
-    .catch(error => next(error))
+  /* eslint-disable */  
+  .catch(error => next(error))
+  /* eslint-enable */
 })
 
 app.get('/api/persons/:id', (req, res, next) => {
