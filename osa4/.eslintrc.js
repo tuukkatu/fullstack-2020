@@ -26,6 +26,12 @@ module.exports = {
       'never'
     ],
     'no-console': 0,
-    'no-unused-vars': ['error', { 'vars': 'all', 'args': 'none' }]
+    'no-unused-vars': ['error', { 'vars': 'all', 'args': 'none' }],
+    'object-curly-spacing': [
+      'error', 'always'
+    ],
+    'arrow-spacing': [
+      'error', { 'before': true, 'after': true }
+    ]
   }
 }
