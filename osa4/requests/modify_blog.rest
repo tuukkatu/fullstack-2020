@@ -1,9 +1,9 @@
-POST http://localhost:3003/api/blogs
+PUT http://localhost:3003/api/blogs/5f8478f768885c3965027872
 Content-Type: application/json
 
 {
     "title": "jeejee",
     "author": "timo",
     "url": "www.google.com",
-    "likes": 5
+    "likes": 40
 }
